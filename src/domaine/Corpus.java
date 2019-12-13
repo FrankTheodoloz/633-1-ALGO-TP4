@@ -16,14 +16,16 @@ public class Corpus {
 
   /**
    * Ajouter les mots d'un document aux mots du corpus
+   *
    * @param document le document contenant les mots à ajouter
    */
   public void addDocument(Document document) {
-    // TODO: Compléter la méthode
+    corpus.addAll(document.getFrequency().keySet());
   }
 
   /**
    * Obtenir la liste de tous les mots distincts contenus dans tous les documents
+   *
    * @return un Set contenant tous les mots
    */
   public Set<String> getCorpus() {
